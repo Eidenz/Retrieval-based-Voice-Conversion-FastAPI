@@ -203,5 +203,5 @@ def status():
 # create model cache
 model_cache = ModelCache()
 # start uvicorn server
-uvicorn.run(app, host="localhost", port=8001)
+uvicorn.run(app, host="0.0.0.0", port=7865)
 

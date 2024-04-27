@@ -5,6 +5,9 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: rvc
+    environment:
+      - NVIDIA_DRIVER_CAPABILITIES=all
+      - NVIDIA_VISIBLE_DEVICES=GPU-f6539406-32dd-55f9-32b2-2eed43f6ef30
     volumes:
       - ./weights:/app/assets/weights
       - ./opt:/app/opt
